@@ -9,7 +9,7 @@ use AppBundle\Entity\Driver;
 /**
  * Journey
  *
- * @ORM\Table(name="journey")
+ * @ORM\Table(name="jou_journey")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\JourneyRepository")
  */
 class Journey
