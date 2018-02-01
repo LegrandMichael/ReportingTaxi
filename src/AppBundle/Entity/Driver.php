@@ -3,11 +3,13 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+use AppBundle\Entity\Journey;
 
 /**
  * Driver
  *
- * @ORM\Table(name="driver")
+ * @ORM\Table(name="dri_driver")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\DriverRepository")
  */
 class Driver
@@ -15,7 +17,7 @@ class Driver
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="dri_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,16 +26,18 @@ class Driver
     /**
      * @var string
      *
-     * @ORM\Column(name="firstName", type="string", length=255)
+     * @ORM\Column(name="dri_first_name", type="string", length=255)
      */
     private $firstName;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lastName", type="string", length=255)
+     * @ORM\Column(name="dri_last_name", type="string", length=255)
      */
     private $lastName;
+
+    
 
 
     /**

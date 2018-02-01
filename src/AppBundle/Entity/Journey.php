@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+use AppBundle\Entity\Driver;
 
 /**
  * Journey
@@ -15,7 +17,7 @@ class Journey
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="jour_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,11 +26,12 @@ class Journey
     /**
      * @var string
      *
-     * @ORM\Column(name="distance", type="integer")
+     * @ORM\Column(name="jour_distance", type="integer")
      */
     private $distance;
 
 
+    
     /**
      * Get id.
      *

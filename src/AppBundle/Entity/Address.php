@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Address
  *
- * @ORM\Table(name="address")
+ * @ORM\Table(name="add_address")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\AddressRepository")
  */
 class Address
@@ -15,7 +15,7 @@ class Address
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="add_oid", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,14 +24,14 @@ class Address
     /**
      * @var string
      *
-     * @ORM\Column(name="street", type="string", length=255)
+     * @ORM\Column(name="add_street", type="string", length=255)
      */
     private $street;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="city", type="string", length=255)
+     * @ORM\Column(name="add_city", type="string", length=255)
      */
     private $city;
 
